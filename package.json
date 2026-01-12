@@ -7,9 +7,10 @@
     "dev": "bun run --watch src/index.ts",
     "dev:dcu": "docker compose up -d",
     "dev:dcd": "docker compose down",
-    "d:push": "bun drizzle-kit push",
-    "d:migrate": "bun drizzle-kit migrate",
-    "d:studio": "bun drizzle-kit studio"
+    "dev:db": "docker compose up -d && bun drizzle-kit push",
+    "dev:push": "bun drizzle-kit push",
+    "dev:migrate": "bun drizzle-kit migrate",
+    "dev:studio": "bun drizzle-kit studio"
   },
   "dependencies": {
     "@elysiajs/openapi": "^1.4.13",

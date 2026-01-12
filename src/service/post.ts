@@ -12,10 +12,6 @@ export const createPost = async (
   userId: string,
   { title, content, tags, imgs }: CreatePostData,
 ) => {
-  if (!userId || !title || !content) {
-    throw new Error("Missing required fields");
-  }
-
   const [newPost] = await db
     .insert(schema.postTable)
     .values({

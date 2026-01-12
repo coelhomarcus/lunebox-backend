@@ -44,7 +44,6 @@ export const testRoutes = new Elysia({ name: "test-routes" })
       return "Hello API!";
     },
     {
-      needsAuth: true, //apenas teste de autenticação
       response: {
         200: z.string().describe("Hello Elysia"),
       },
