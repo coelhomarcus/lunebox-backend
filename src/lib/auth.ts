@@ -17,6 +17,12 @@ export const auth = betterAuth({
       generateId: false,
     },
   },
+  session: {
+    cookieCache: {
+      enabled: true,
+      maxAge: 60 * 5, // 5 minutes
+    },
+  },
   basePath: "/api",
   plugins: [openAPI()],
 });

@@ -3,7 +3,10 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "d:push": "bun drizzle-kit push",
+    "d:migrate": "bun drizzle-kit migrate",
+    "d:studio": "bun drizzle-kit studio"
   },
   "dependencies": {
     "@elysiajs/openapi": "^1.4.13",
