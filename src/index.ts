@@ -2,7 +2,6 @@ import { Elysia } from "elysia";
 import { openapi } from "@elysiajs/openapi";
 import * as z from "zod";
 import { OpenAPI } from "@/lib/auth";
-import { betterAuth } from "./macro/betterAuth";
 import { testRoutes } from "./route/test";
 
 const app = new Elysia()
