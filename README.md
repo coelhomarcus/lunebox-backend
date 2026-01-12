@@ -1,15 +1,61 @@
-# Elysia with Bun runtime
+# LuneBox | Back-end
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+Backend de uma plataforma simples de vídeos.
+A proposta inicial do projeto é **armazenar apenas referências (URLs)** de mídia no backend e distribuí-las de acordo com o conteúdo.
+
+Este projeto foi criado principalmente como um **laboratório de estudo**, para explorar o uso do **Bun** como runtime e suas libs.
+
+## Tecnologias 🧰
+
+![Bun](https://img.shields.io/badge/Bun-000000?style=plastic&logo=bun&logoColor=white)
+![Drizzle ORM](https://img.shields.io/badge/Drizzle-C5F74F?style=plastic&logo=drizzle&logoColor=black)
+![Elysia](https://img.shields.io/badge/Elysia-8B5CF6?style=plastic&logo=elysia&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=plastic&logo=postgresql&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=plastic&logo=typescript&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=plastic&logo=zod&logoColor=white)
+![Better Auth](https://img.shields.io/badge/Better%20Auth-111827?style=plastic&logo=auth0&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=plastic&logo=docker&logoColor=white)
+
+Com a evolução do projeto, este README será expandido com mais detalhes sobre arquitetura, rotas e decisões técnicas.
+
+## Instalação ⚙️
+
+### Instalar dependências
 ```bash
-bun create elysia ./elysia-example
+bun install
 ```
 
-## Development
-To start the development server run:
+### Subir banco de dados de desenvolvimento
 ```bash
-bun run dev
+docker compose up -d
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+### Rodar migrations
+```bash
+bun drizzle-kit migrate
+```
+
+ou
+
+### Push no DB
+```bash
+bun drizzle-kit push
+```
+
+### Iniciar o servidor
+```bash
+bun run start
+```
+
+### Ver/Testar API -> OpenAPI w/ Elysia
+```bash
+http://localhost:3000/openapi
+```
+
+### Ver/Testar DB
+```bash
+bun drizzle-kit studio
+```
+
+## Checklist ✅
+- ...

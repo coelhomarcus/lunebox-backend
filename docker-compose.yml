@@ -1,0 +1,16 @@
+# docker compose apenas para testes locais com o Postgres
+version: "3.9"
+
+services:
+  postgres-test:
+    image: postgres:16
+    container_name: postgres_lnbox
+    environment:
+      POSTGRES_DB: lnbox
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5433:5432"
+    tmpfs:
+      - /var/lib/postgresql/data
+# postgres://user:password@localhost:5433/lnbox
