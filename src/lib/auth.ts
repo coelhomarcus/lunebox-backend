@@ -1,7 +1,7 @@
 import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { db } from "@/database/db"; // your drizzle instance
-import * as schema from "@/database/schema/";
+import * as schema from "@/database/schema";
 import { openAPI } from "better-auth/plugins";
 
 export const auth = betterAuth({
@@ -17,6 +17,12 @@ export const auth = betterAuth({
       generateId: false,
     },
   },
+  // session: {
+  //   cookieCache: {
+  //     enabled: true,
+  //     maxAge: 60 * 5, // 5 minutes
+  //   },
+  // },
   basePath: "/api",
   plugins: [openAPI()],
 });

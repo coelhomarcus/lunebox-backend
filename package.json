@@ -3,7 +3,14 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "bun:build": "bun run build.ts",
+    "dev": "bun run --watch src/index.ts",
+    "dev:dcu": "docker compose up -d",
+    "dev:dcd": "docker compose down",
+    "dev:db": "docker compose up -d && bun drizzle-kit push",
+    "dev:push": "bun drizzle-kit push",
+    "dev:migrate": "bun drizzle-kit migrate",
+    "dev:studio": "bun drizzle-kit studio"
   },
   "dependencies": {
     "@elysiajs/openapi": "^1.4.13",
