@@ -1,6 +1,6 @@
 import { Elysia } from "elysia";
 import z from "zod";
-import { getAllUsers } from "@/service/users";
+import { getAllUsers } from "@/service/users.services";
 import { betterAuth } from "@/macro/betterAuth";
 
 export const userRoutes = new Elysia({ name: "user-routes" })

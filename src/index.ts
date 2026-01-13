@@ -21,3 +21,6 @@ const app = new Elysia()
   .listen(3000);
 
 console.log(`🦊 Elysia http://${app.server?.hostname}:${app.server?.port}`);
+console.log(
+  `👻 OpenAPI http://${app.server?.hostname}:${app.server?.port}/openapi`,
+);

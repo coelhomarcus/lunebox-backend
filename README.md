@@ -63,8 +63,8 @@ bun drizzle-kit studio
 - [X] `createUser` – criar um novo usuário
 - [ ] `getUser` – obter usuário por ID
 - [X] `getAllUsers` – listar todos os usuários - only admin
-- [ ] `updateUser` – atualizar dados do usuário
-- [ ] `deleteUser` – remover usuário
+- [X] `updateUser` – atualizar dados do usuário - (Better-Auth)
+- [X] `deleteUser` – remover usuário - (Better-Auth)
 
 ### Medias
 - [ ] `createMedia` – criar nova mídia

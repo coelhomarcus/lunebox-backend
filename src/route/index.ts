@@ -1,4 +1,4 @@
-import { communityRoutes } from "./community";
-import { userRoutes } from "./user";
+import { communityRoutes } from "./community.routes";
+import { userRoutes } from "./user.routes";
 
 export { communityRoutes, userRoutes };
