@@ -61,8 +61,9 @@ bun drizzle-kit studio
 
 ### Users
 - [X] `createUser` – criar um novo usuário
-- [ ] `getUser` – obter usuário por ID
-- [X] `getAllUsers` – listar todos os usuários - only admin
+- [X] `getUserById` – obter usuário por ID - (Admin)
+- [X] `getAllUsers` – listar todos os usuários - (Admin)
+- [X] `/me` - obter usuário logado - (Better-Auth) - `/auth/account-info`
 - [X] `updateUser` – atualizar dados do usuário - (Better-Auth)
 - [X] `deleteUser` – remover usuário - (Better-Auth)
 
