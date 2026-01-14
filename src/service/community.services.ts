@@ -71,7 +71,10 @@ export const getUserPosts = async (username: string) => {
       },
     })
     .from(schema.postTable)
-    .innerJoin(schema.user, eq(schema.postTable.userId, schema.user.id));
+    .innerJoin(schema.user, eq(schema.postTable.userId, schema.user.id))
+    .where(eq(schema.user.username, username));
+
+  console.log();
 
   if (posts.length === 0) {
     throw new Error("No posts found");
